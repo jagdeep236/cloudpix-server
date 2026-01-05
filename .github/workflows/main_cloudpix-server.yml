@@ -1,4 +1,4 @@
-name: Deploy cloudpix-server
+name: Deploy cloudpix server
 
 on:
   push:
