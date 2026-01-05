@@ -1,0 +1,23 @@
+{
+  "name": "cloudpix-functions",
+  "version": "1.0.0",
+  "description": "Azure Functions for CloudPix - thumbnail processing and cleanup",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "prestart": "npm run build",
+    "start": "func start",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "dependencies": {
+    "@azure/functions": "^4.0.0",
+    "@azure/storage-blob": "^12.29.1",
+    "@azure/cosmos": "^4.0.0"
+  },
+  "devDependencies": {
+    "@azure/functions-core-tools": "^4.0.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.9.3"
+  }
+}
+

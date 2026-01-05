@@ -1,0 +1,14 @@
+{
+  "bindings": [
+    {
+      "type": "queueTrigger",
+      "direction": "in",
+      "name": "fileMessage",
+      "queueName": "thumbnail-processing",
+      "connection": "AzureWebJobsStorage"
+    }
+  ],
+  "scriptFile": "../dist/thumbnail-processor/index.js",
+  "entryPoint": "thumbnailProcessor"
+}
+
